@@ -1,0 +1,72 @@
+html, body {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+} */
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border: 5px solid #a74a4a;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    z-index: 9999; /* set a high z-index to ensure the spinner is on top of other elements */
+    margin-top: 50px; /* add some top margin to create space between the spinner and elements above it */
+  }
+  
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 80%;
+}
+
+/* .spinner i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #fff;
+}
+*/
+/* .loader .spinner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+} */
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/stylesheets/menu.css"> 
+<link rel="stylesheet" href="/stylesheets/main.css">
+<link rel="stylesheet" href="/stylesheets/dashboard.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link rel="stylesheet" href="timeline.css"> -->
+<!-- <link rel="stylesheet" href="interactive-and-responsive-svg-map-of-us-states-capitals/map.css"> -->
+
+</head>
+
+<body>
+
+<!-- Menu Section -->
+
+<%- include('menu') %>
+
+<!-- Body Section -->
+
+<table class="styled-table" id = "userQueryTable">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Query Time</th>
+            <th>Query Content</th>
+            <th>Query Type</th>
+            <th>Result</th>
+            <th>Result Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <!-- and so on... -->
+    </tbody>
+</table>
+
+<!-- HTML !-->
+<button class="button-91" role="button" id = "clearButton">Clear</button>
+   
+</body>
+<!-- Assorted JS files : Order DOES matter, files to be included should be placed before the "includers" -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/javascripts/config.js"></script>
+<!-- <script src="interactive-and-responsive-svg-map-of-us-states-capitals/map.js"></script> -->
+<script src="/javascripts/menu.js"></script>
+<!-- <script src="timeline.js"></script> -->
+<script src="/javascripts/dashboard.js"> </script>
+</html> 

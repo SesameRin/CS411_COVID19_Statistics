@@ -1,0 +1,35 @@
+.paper-form table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.paper-form td,
+.paper-form th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.paper-form tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+.rank-form table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.rank-form td,
+.rank-form th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.rank-form tr:nth-child(even) {
+  background-color: #a1f1e9;
+}

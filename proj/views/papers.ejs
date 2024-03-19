@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/stylesheets/menu.css" />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <link rel="stylesheet" href="/stylesheets/papers.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- <link rel="stylesheet" href="timeline.css"> -->
+    <!-- <link rel="stylesheet" href="interactive-and-responsive-svg-map-of-us-states-capitals/map.css"> -->
+  </head>
+
+  <body>
+    <!-- Menu Section -->
+
+    <%- include('menu') %>
+
+    <!-- Body Section -->
+    <div>
+      <p><br /><br /><br /></p>
+    </div>
+
+    <div id="paper search bar">
+      <form id="paper-form" action="/search" method="GET">
+        <label for="title">Title:</label><br />
+        <input type="text" id="title-input"/><br />
+        <label for="author">Author:</label><br />
+        <input type="text" id="author-input" /><br />
+        <label for="journal">Journal:</label><br />
+        <input type="text" id="journal-input" /><br />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <br />
+    <div id="paper-data"></div>
+
+    <table id = "PaperSearchTable" class="paper-form">
+      <thead>
+          <tr>
+              <th>Title</th>
+              <th>Authors</th>
+              <th>Journal</th>
+              <th>Publish Time</th>
+              <th>Search Times</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          <!-- to be added -->
+      </tbody>
+    </table>
+
+    <br>
+    <br>
+    <div style="border-top: 1px solid black;"></div>
+    <br>
+    <br>
+
+    <table id = "PaperRankTable" class="rank-form">
+      <thead>
+          <tr>
+              <th>Rank</th>
+              <th>Title</th>
+              <th>Search Times</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          <!-- to be added -->
+      </tbody>
+    </table>
+  </body>
+  <!-- Assorted JS files : Order DOES matter, files to be included should be placed before the "includers" -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/javascripts/config.js"></script>
+  <!-- <script src="interactive-and-responsive-svg-map-of-us-states-capitals/map.js"></script> -->
+  <script src="/javascripts/menu.js"></script>
+
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="//code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script src="/javascripts/papers.js"></script>
+
+  <!-- <script src="timeline.js"></script> -->
+</html>
